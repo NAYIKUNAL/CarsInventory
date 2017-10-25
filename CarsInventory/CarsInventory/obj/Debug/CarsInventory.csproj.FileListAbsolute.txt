@@ -94,3 +94,7 @@ C:\Dot_NetProjects\Test\CarsInventory\branches\develop\CarsInventory\CarsInvento
 C:\Dot_NetProjects\Test\CarsInventory\branches\develop\CarsInventory\CarsInventory\obj\Debug\CarsInventory.pdb
 C:\Dot_NetProjects\Test\CarsInventory\branches\develop\CarsInventory\CarsInventory\bin\log4net.dll
 C:\Dot_NetProjects\Test\CarsInventory\branches\develop\CarsInventory\CarsInventory\bin\log4net.xml
+C:\Dot_NetProjects\Test\CarsInventory\branches\develop\CarsInventory\CarsInventory\bin\EntityFramework.dll
+C:\Dot_NetProjects\Test\CarsInventory\branches\develop\CarsInventory\CarsInventory\bin\EntityFramework.SqlServer.dll
+C:\Dot_NetProjects\Test\CarsInventory\branches\develop\CarsInventory\CarsInventory\bin\EntityFramework.xml
+C:\Dot_NetProjects\Test\CarsInventory\branches\develop\CarsInventory\CarsInventory\bin\EntityFramework.SqlServer.xml

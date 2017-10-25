@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CarsInventoryModelStoreContainer" CdmEntityContainer="CarsInventoryEntities">
+    <EntitySetMapping Name="tblCars">
+      <EntityTypeMapping TypeName="CarsInventoryModel.tblCar">
+        <MappingFragment StoreEntitySet="tblCars">
+          <ScalarProperty Name="inCarId" ColumnName="inCarId" />
+          <ScalarProperty Name="stBrand" ColumnName="stBrand" />
+          <ScalarProperty Name="stModel" ColumnName="stModel" />
+          <ScalarProperty Name="inYear" ColumnName="inYear" />
+          <ScalarProperty Name="dcPrice" ColumnName="dcPrice" />
+          <ScalarProperty Name="flgIsNew" ColumnName="flgIsNew" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,4 +1,7 @@
-﻿using System;
+﻿using CarsInventory.IRepositories;
+using CarsInventory.Models;
+using CarsInventory.Repositories;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,15 +14,14 @@ namespace CarsInventory.Controllers
     {
         //Here is the once-per-class call to initialize the log object
         private static readonly log4net.ILog mologger = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+        ICarsInventoryRepo _repo = new CarsInventoryRepo();
 
         // GET: CarsInventory
         public ActionResult Index()
         {
             try
             {
-                int x, y, z;
-                x = 5; y = 0;
-                z = x / y;
+
             }
             catch (Exception ex)
             {

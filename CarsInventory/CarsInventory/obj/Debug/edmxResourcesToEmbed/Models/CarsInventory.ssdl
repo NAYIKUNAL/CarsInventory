@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CarsInventoryModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="tblCars">
+    <Key>
+      <PropertyRef Name="inCarId" />
+    </Key>
+    <Property Name="inCarId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="stBrand" Type="nvarchar" MaxLength="100" />
+    <Property Name="stModel" Type="nvarchar" MaxLength="100" />
+    <Property Name="inYear" Type="int" />
+    <Property Name="dcPrice" Type="decimal" Precision="12" Scale="4" />
+    <Property Name="flgIsNew" Type="bit" />
+  </EntityType>
+  <EntityContainer Name="CarsInventoryModelStoreContainer">
+    <EntitySet Name="tblCars" EntityType="Self.tblCars" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
