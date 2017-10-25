@@ -1,5 +1,6 @@
 ﻿using CarsInventory.IRepositories;
 using CarsInventory.Models;
+using CarsInventory.Models.Temp;
 using CarsInventory.Repositories;
 using System;
 using System.Collections.Generic;
@@ -33,6 +34,35 @@ namespace CarsInventory.Controllers
             }
 
             return View();
+        }
+
+        public ActionResult GetCarListing()
+        {
+            var loCarList = new List<CarModel>(new[]
+            {
+            new CarModel { inCarID =1, stBrand = "Suzuki", stModel ="Banelo", inYear = 2017, dcPrice = 500000, flgIsNew = true},
+            new CarModel { inCarID =1, stBrand = "Suzuki", stModel ="Banelo", inYear = 2017, dcPrice = 500000, flgIsNew = true},
+            new CarModel { inCarID =1, stBrand = "Suzuki", stModel ="Banelo", inYear = 2017, dcPrice = 500000, flgIsNew = true},
+            new CarModel { inCarID =1, stBrand = "Suzuki", stModel ="Banelo", inYear = 2017, dcPrice = 500000, flgIsNew = true},
+            new CarModel { inCarID =1, stBrand = "Suzuki", stModel ="Banelo", inYear = 2017, dcPrice = 500000, flgIsNew = true},
+            new CarModel { inCarID =1, stBrand = "Suzuki", stModel ="Banelo", inYear = 2017, dcPrice = 500000, flgIsNew = true},
+            new CarModel { inCarID =1, stBrand = "Suzuki", stModel ="Banelo", inYear = 2017, dcPrice = 500000, flgIsNew = true},
+            new CarModel { inCarID =1, stBrand = "Suzuki", stModel ="Banelo", inYear = 2017, dcPrice = 500000, flgIsNew = true},
+            new CarModel { inCarID =1, stBrand = "Suzuki", stModel ="Banelo", inYear = 2017, dcPrice = 500000, flgIsNew = true},
+            new CarModel { inCarID =1, stBrand = "Suzuki", stModel ="Banelo", inYear = 2017, dcPrice = 500000, flgIsNew = true},
+            new CarModel { inCarID =1, stBrand = "Suzuki", stModel ="Banelo", inYear = 2017, dcPrice = 500000, flgIsNew = true},
+            new CarModel { inCarID =1, stBrand = "Suzuki", stModel ="Banelo", inYear = 2017, dcPrice = 500000, flgIsNew = true},
+            new CarModel { inCarID =1, stBrand = "Suzuki", stModel ="Banelo", inYear = 2017, dcPrice = 500000, flgIsNew = true},
+            new CarModel { inCarID =1, stBrand = "Suzuki", stModel ="Banelo", inYear = 2017, dcPrice = 500000, flgIsNew = true},
+            new CarModel { inCarID =1, stBrand = "Suzuki", stModel ="Banelo", inYear = 2017, dcPrice = 500000, flgIsNew = true},
+            new CarModel { inCarID =1, stBrand = "Suzuki", stModel ="Banelo", inYear = 2017, dcPrice = 500000, flgIsNew = true}
+
+        });
+
+            return Json(new
+            {
+                aaData = loCarList
+            }, JsonRequestBehavior.AllowGet);
         }
     }
 }
