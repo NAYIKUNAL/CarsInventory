@@ -1,0 +1,15 @@
+DEBUG 2017-10-25 02:52:24,892   403ms arsInventoryController Index              - Debug error logging
+System.DivideByZeroException: Attempted to divide by zero.
+   at CarsInventory.Controllers.CarsInventoryController.Index() in C:\Dot_NetProjects\Test\CarsInventory\branches\develop\CarsInventory\CarsInventory\Controllers\CarsInventoryController.cs:line 22
+INFO  2017-10-25 02:52:24,928   439ms arsInventoryController Index              - Info error logging
+System.DivideByZeroException: Attempted to divide by zero.
+   at CarsInventory.Controllers.CarsInventoryController.Index() in C:\Dot_NetProjects\Test\CarsInventory\branches\develop\CarsInventory\CarsInventory\Controllers\CarsInventoryController.cs:line 22
+WARN  2017-10-25 02:52:24,929   440ms arsInventoryController Index              - Warn error logging
+System.DivideByZeroException: Attempted to divide by zero.
+   at CarsInventory.Controllers.CarsInventoryController.Index() in C:\Dot_NetProjects\Test\CarsInventory\branches\develop\CarsInventory\CarsInventory\Controllers\CarsInventoryController.cs:line 22
+ERROR 2017-10-25 02:52:24,930   441ms arsInventoryController Index              - Error error logging
+System.DivideByZeroException: Attempted to divide by zero.
+   at CarsInventory.Controllers.CarsInventoryController.Index() in C:\Dot_NetProjects\Test\CarsInventory\branches\develop\CarsInventory\CarsInventory\Controllers\CarsInventoryController.cs:line 22
+FATAL 2017-10-25 02:52:24,931   442ms arsInventoryController Index              - Fatal error logging
+System.DivideByZeroException: Attempted to divide by zero.
+   at CarsInventory.Controllers.CarsInventoryController.Index() in C:\Dot_NetProjects\Test\CarsInventory\branches\develop\CarsInventory\CarsInventory\Controllers\CarsInventoryController.cs:line 22
