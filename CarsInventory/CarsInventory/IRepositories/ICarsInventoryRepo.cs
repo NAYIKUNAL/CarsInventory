@@ -8,7 +8,9 @@ namespace CarsInventory.IRepositories
 {
     public interface ICarsInventoryRepo
     {
-        List<tblCar> getAllCarInventory(tblCar foRequest);
-        tblCar getUniqueCarInformation(tblCar foRequest);
+        List<tblCar> getAllCarInventory(CarViewModel foRequest);
+        tblCar getUniqueCarInformation(int fiCarId);
+        int saveCarInformation(tblCar foRequest);
+        int deleteCarInformation(int fiCarID);
     }
 }

@@ -19,6 +19,6 @@ namespace CarsInventory.Models
         public string stModel { get; set; }
         public Nullable<int> inYear { get; set; }
         public Nullable<decimal> dcPrice { get; set; }
-        public Nullable<bool> flgIsNew { get; set; }
+        public bool flgIsNew { get; set; }
     }
 }

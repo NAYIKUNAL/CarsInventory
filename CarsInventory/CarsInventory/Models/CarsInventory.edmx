@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="CarsInventoryModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="CarsInventoryModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="tblCars">
           <Key>
             <PropertyRef Name="inCarId" />
@@ -14,16 +14,18 @@
           <Property Name="stModel" Type="nvarchar" MaxLength="100" />
           <Property Name="inYear" Type="int" />
           <Property Name="dcPrice" Type="decimal" Precision="12" Scale="4" />
-          <Property Name="flgIsNew" Type="bit" />
+          <Property Name="flgIsNew" Type="bit" Nullable="false" />
         </EntityType>
         <EntityContainer Name="CarsInventoryModelStoreContainer">
           <EntitySet Name="tblCars" EntityType="Self.tblCars" Schema="dbo" store:Type="Tables" />
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="CarsInventoryModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="CarsInventoryEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="tblCars" EntityType="CarsInventoryModel.tblCar" />
+        </EntityContainer>
         <EntityType Name="tblCar">
           <Key>
             <PropertyRef Name="inCarId" />
@@ -33,11 +35,8 @@
           <Property Name="stModel" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
           <Property Name="inYear" Type="Int32" />
           <Property Name="dcPrice" Type="Decimal" Precision="12" Scale="4" />
-          <Property Name="flgIsNew" Type="Boolean" />
+          <Property Name="flgIsNew" Type="Boolean" Nullable="false" />
         </EntityType>
-        <EntityContainer Name="CarsInventoryEntities" annotation:LazyLoadingEnabled="true">
-          <EntitySet Name="tblCars" EntityType="Self.tblCar" />
-        </EntityContainer>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -47,12 +46,12 @@
           <EntitySetMapping Name="tblCars">
             <EntityTypeMapping TypeName="CarsInventoryModel.tblCar">
               <MappingFragment StoreEntitySet="tblCars">
-                <ScalarProperty Name="inCarId" ColumnName="inCarId" />
-                <ScalarProperty Name="stBrand" ColumnName="stBrand" />
-                <ScalarProperty Name="stModel" ColumnName="stModel" />
-                <ScalarProperty Name="inYear" ColumnName="inYear" />
-                <ScalarProperty Name="dcPrice" ColumnName="dcPrice" />
                 <ScalarProperty Name="flgIsNew" ColumnName="flgIsNew" />
+                <ScalarProperty Name="dcPrice" ColumnName="dcPrice" />
+                <ScalarProperty Name="inYear" ColumnName="inYear" />
+                <ScalarProperty Name="stModel" ColumnName="stModel" />
+                <ScalarProperty Name="stBrand" ColumnName="stBrand" />
+                <ScalarProperty Name="inCarId" ColumnName="inCarId" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

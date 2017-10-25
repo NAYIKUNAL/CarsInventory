@@ -9,7 +9,7 @@
     <Property Name="stModel" Type="nvarchar" MaxLength="100" />
     <Property Name="inYear" Type="int" />
     <Property Name="dcPrice" Type="decimal" Precision="12" Scale="4" />
-    <Property Name="flgIsNew" Type="bit" />
+    <Property Name="flgIsNew" Type="bit" Nullable="false" />
   </EntityType>
   <EntityContainer Name="CarsInventoryModelStoreContainer">
     <EntitySet Name="tblCars" EntityType="Self.tblCars" Schema="dbo" store:Type="Tables" />

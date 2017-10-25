@@ -1,6 +1,6 @@
 USE [master]
 GO
-/****** Object:  Database [CarsInventory]    Script Date: 25-Oct-17 10:28:19 PM ******/
+/****** Object:  Database [CarsInventory]    Script Date: 26-Oct-17 2:51:58 AM ******/
 CREATE DATABASE [CarsInventory]
 -- CONTAINMENT = NONE
 -- ON  PRIMARY 
@@ -73,7 +73,7 @@ ALTER DATABASE [CarsInventory] SET DELAYED_DURABILITY = DISABLED
 GO
 USE [CarsInventory]
 GO
-/****** Object:  Table [dbo].[tblCars]    Script Date: 25-Oct-17 10:28:19 PM ******/
+/****** Object:  Table [dbo].[tblCars]    Script Date: 26-Oct-17 2:51:58 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -84,7 +84,7 @@ CREATE TABLE [dbo].[tblCars](
 	[stModel] [nvarchar](100) NULL,
 	[inYear] [int] NULL,
 	[dcPrice] [decimal](12, 4) NULL,
-	[flgIsNew] [bit] NULL,
+	[flgIsNew] [bit] NOT NULL,
  CONSTRAINT [PK_tblCars] PRIMARY KEY CLUSTERED 
 (
 	[inCarId] ASC

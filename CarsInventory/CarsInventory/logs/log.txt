@@ -13,3 +13,39 @@ System.DivideByZeroException: Attempted to divide by zero.
 FATAL 2017-10-25 02:52:24,931   442ms arsInventoryController Index              - Fatal error logging
 System.DivideByZeroException: Attempted to divide by zero.
    at CarsInventory.Controllers.CarsInventoryController.Index() in C:\Dot_NetProjects\Test\CarsInventory\branches\develop\CarsInventory\CarsInventory\Controllers\CarsInventoryController.cs:line 22
+INFO  2017-10-26 00:22:26,032  2778ms MvcApplication         Application_Start  - Application has been Started :: 10-DD-2017
+INFO  2017-10-26 00:23:21,874  2952ms MvcApplication         Application_Start  - Application has been Started :: 10-DD-2017
+INFO  2017-10-26 00:24:03,276  2083ms MvcApplication         Application_Start  - Application has been Started :: 10-DD-2017
+INFO  2017-10-26 00:35:46,806  4278ms MvcApplication         Application_Start  - Application has been Started :: 10-DD-2017
+INFO  2017-10-26 00:48:11,112  4387ms MvcApplication         Application_Start  - Application has been Started :: 10-DD-2017
+INFO  2017-10-26 00:49:23,268  1646ms MvcApplication         Application_Start  - Application has been Started :: 10-DD-2017
+INFO  2017-10-26 00:50:33,224  1697ms MvcApplication         Application_Start  - Application has been Started :: 10-DD-2017
+INFO  2017-10-26 00:51:48,032  2717ms MvcApplication         Application_Start  - Application has been Started :: 10-DD-2017
+INFO  2017-10-26 01:20:47,099  3574ms MvcApplication         Application_Start  - Application has been Started :: 10-DD-2017
+INFO  2017-10-26 01:22:09,791  4836ms MvcApplication         Application_Start  - Application has been Started :: 10-DD-2017
+INFO  2017-10-26 01:23:55,561  3970ms MvcApplication         Application_Start  - Application has been Started :: 10-DD-2017
+INFO  2017-10-26 01:29:02,064 12014ms MvcApplication         Application_Start  - Application has been Started :: 10-DD-2017
+INFO  2017-10-26 01:44:05,848  2740ms MvcApplication         Application_Start  - Application has been Started :: 10-DD-2017
+INFO  2017-10-26 02:06:55,359  5379ms MvcApplication         Application_Start  - Application has been Started :: 10-DD-2017
+INFO  2017-10-26 02:26:53,761  2921ms MvcApplication         Application_Start  - Application has been Started :: 10-DD-2017
+ERROR 2017-10-26 02:27:25,373 34533ms CarsInventoryRepo      saveCarInformation - Error error logging
+System.Data.Entity.Infrastructure.DbUpdateConcurrencyException: Store update, insert, or delete statement affected an unexpected number of rows (0). Entities may have been modified or deleted since entities were loaded. See http://go.microsoft.com/fwlink/?LinkId=472540 for information on understanding and handling optimistic concurrency exceptions. ---> System.Data.Entity.Core.OptimisticConcurrencyException: Store update, insert, or delete statement affected an unexpected number of rows (0). Entities may have been modified or deleted since entities were loaded. See http://go.microsoft.com/fwlink/?LinkId=472540 for information on understanding and handling optimistic concurrency exceptions.
+   at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.ValidateRowsAffected(Int64 rowsAffected, UpdateCommand source)
+   at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   at System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.<Update>b__2(UpdateTranslator ut)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update[T](T noChangesResult, Func`2 updateFunction)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update()
+   at System.Data.Entity.Core.Objects.ObjectContext.<SaveChangesToStore>b__35()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChangesToStore(SaveOptions options, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass2a.<SaveChangesInternal>b__27()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChangesInternal(SaveOptions options, Boolean executeInExistingTransaction)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChanges(SaveOptions options)
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at CarsInventory.Repositories.CarsInventoryRepo.saveCarInformation(tblCar foRequest) in C:\Dot_NetProjects\Test\CarsInventory\branches\develop\CarsInventory\CarsInventory\Repositories\CarsInventoryRepo.cs:line 55
+INFO  2017-10-26 02:28:55,398  1772ms MvcApplication         Application_Start  - Application has been Started :: 10-DD-2017

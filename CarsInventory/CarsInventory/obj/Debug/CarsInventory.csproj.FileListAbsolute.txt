@@ -20,13 +20,11 @@ C:\Dot_NetProjects\Test\CarsInventory\branches\develop\CarsInventory\CarsInvento
 C:\Dot_NetProjects\Test\CarsInventory\branches\develop\CarsInventory\CarsInventory\bin\roslyn\Microsoft.VisualBasic.Core.targets
 C:\Dot_NetProjects\Test\CarsInventory\branches\develop\CarsInventory\CarsInventory\bin\roslyn\Microsoft.Win32.Primitives.dll
 C:\Dot_NetProjects\Test\CarsInventory\branches\develop\CarsInventory\CarsInventory\bin\roslyn\System.AppContext.dll
-C:\Dot_NetProjects\Test\CarsInventory\branches\develop\CarsInventory\CarsInventory\bin\roslyn\System.Collections.Immutable.dll
 C:\Dot_NetProjects\Test\CarsInventory\branches\develop\CarsInventory\CarsInventory\bin\roslyn\System.Console.dll
 C:\Dot_NetProjects\Test\CarsInventory\branches\develop\CarsInventory\CarsInventory\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
 C:\Dot_NetProjects\Test\CarsInventory\branches\develop\CarsInventory\CarsInventory\bin\roslyn\System.Diagnostics.Process.dll
 C:\Dot_NetProjects\Test\CarsInventory\branches\develop\CarsInventory\CarsInventory\bin\roslyn\System.Diagnostics.StackTrace.dll
 C:\Dot_NetProjects\Test\CarsInventory\branches\develop\CarsInventory\CarsInventory\bin\roslyn\System.IO.Compression.dll
-C:\Dot_NetProjects\Test\CarsInventory\branches\develop\CarsInventory\CarsInventory\bin\roslyn\System.IO.FileSystem.dll
 C:\Dot_NetProjects\Test\CarsInventory\branches\develop\CarsInventory\CarsInventory\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
 C:\Dot_NetProjects\Test\CarsInventory\branches\develop\CarsInventory\CarsInventory\bin\roslyn\System.IO.FileSystem.Primitives.dll
 C:\Dot_NetProjects\Test\CarsInventory\branches\develop\CarsInventory\CarsInventory\bin\roslyn\System.IO.Pipes.dll

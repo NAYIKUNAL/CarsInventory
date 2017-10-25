@@ -4,12 +4,12 @@
     <EntitySetMapping Name="tblCars">
       <EntityTypeMapping TypeName="CarsInventoryModel.tblCar">
         <MappingFragment StoreEntitySet="tblCars">
-          <ScalarProperty Name="inCarId" ColumnName="inCarId" />
-          <ScalarProperty Name="stBrand" ColumnName="stBrand" />
-          <ScalarProperty Name="stModel" ColumnName="stModel" />
-          <ScalarProperty Name="inYear" ColumnName="inYear" />
-          <ScalarProperty Name="dcPrice" ColumnName="dcPrice" />
           <ScalarProperty Name="flgIsNew" ColumnName="flgIsNew" />
+          <ScalarProperty Name="dcPrice" ColumnName="dcPrice" />
+          <ScalarProperty Name="inYear" ColumnName="inYear" />
+          <ScalarProperty Name="stModel" ColumnName="stModel" />
+          <ScalarProperty Name="stBrand" ColumnName="stBrand" />
+          <ScalarProperty Name="inCarId" ColumnName="inCarId" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
